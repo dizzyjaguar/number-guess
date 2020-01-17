@@ -17,7 +17,7 @@ test('time to test a function', function(assert) {
     console.log(compareNumbers(guess, correctNumber));
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(guess, correctNumber);
+    assert.equal(compareNumbers(), 0);
 });
 
 test('time to test a function', function(assert) {
@@ -33,7 +33,7 @@ test('time to test a function', function(assert) {
     console.log(compareNumbers(guess, correctNumber));
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(guess + 4, correctNumber);
+    assert.equal(compareNumbers(), -1);
 });
 
 test('time to test a function', function(assert) {
@@ -45,9 +45,9 @@ test('time to test a function', function(assert) {
     let correctNumber = 4;
     //Act 
     // Call the function you're testing and set the result to a const
-    compareNumbers(guess - 5, correctNumber);
+    compareNumbers(guess, correctNumber);
     console.log(compareNumbers(guess, correctNumber));
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(guess, correctNumber);
+    assert.equal(compareNumbers, 1);
 });
