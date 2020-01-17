@@ -1,3 +1,5 @@
+import { compareNumbers } from './compareNumbers';
+
 const numberInput = document.getElementById('number-input');
 const guessButton = document.getElementById('guess-button');
 const guessAnswer = document.getElementById('guess-answer');
@@ -16,4 +18,6 @@ console.log (numberToGuess);
 
 //this is where my button event listener will be once i write the remaining functions
 
-//guessButton.addEventListener('click' )
+guessButton.addEventListener('click', compareNumbers(numberInput, numberToGuess)); {
+    console.log('This is working kind of');
+}

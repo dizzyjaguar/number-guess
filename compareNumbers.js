@@ -8,4 +8,4 @@ const compareNumbers = (guess, correctNumber) => {
     } else if (guess > correctNumber ) {
         return 1;
     }
-}
+};
