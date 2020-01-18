@@ -1,0 +1,61 @@
+body {
+    background-color: cadetblue;
+    color: rgb(150, 135, 0);
+    text-align: center;
+    margin-top: 100px;
+    font-size: larger;
+}
+
+.title {
+    max-width: 50%;
+    padding: 5px;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: floralwhite;
+}
+
+.rules {
+    max-width: 75%;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: floralwhite;
+}
+
+.game {
+    padding: 10px;
+    max-width: 40%;
+    margin: 0 auto;
+    font-size: xx-large;
+    background-color: floralwhite;
+}
+
+.results-area {
+    background-color: floralwhite;
+    padding: 10px;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+#number-input {
+    background-color: cadetblue;
+    color: floralwhite;
+    font-size: large;
+}
+
+#guess-button {
+    background-color:rgb(139, 15, 21);
+    width: 90px;
+    height: 30px;
+    border-radius: 3rem;
+    color: floralwhite;
+    font-size: large;
+}
+
+#guess-button:hover {
+    cursor: grab;
+    opacity: 85%;
+}
+
+#guess-button:active {
+    cursor: grabbing;
+}

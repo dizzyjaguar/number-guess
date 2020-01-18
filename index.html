@@ -11,13 +11,17 @@
 
 <body>
     <div class="container">
-        <header>            
-            <h1>Can You Guess The Number?</h1>
-            <p>If your up for the challenge you will need to guess the number.  Enter your guess in the input box below.  You will have 9 tries, otherwize you lose.</p>
+        <header>
+            <div class="title">
+                <h1>Can You Guess The Number?</h1>
+            </div>
+            <div class="rules">
+                <p>If your up for the challenge you will need to guess the number.  Enter your guess in the input box below.  You will have 9 tries, otherwize you lose.</p>
+            </div>
         </header>
         <main>
             <div class="game">
-                <label for="number-input">What number do you think it is?</label>
+                <label for="number-input">What number do you think it is?</label> <br>
                 <input id="number-input" type="number" min="1" max="33">
                 <button id="guess-button">Guess</button>
             </div>
