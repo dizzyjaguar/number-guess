@@ -1,53 +1,33 @@
-// IMPORT MODULES under test here:
-// import example from '../src/example.js';
+
 import { compareNumbers } from '../compareNumbers.js';
 
 const test = QUnit.test;
 
 test('time to test a function', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-    
-    // test for equal
+
     let guess = 7;
     let correctNumber = 7;
-    //Act 
-    // Call the function you're testing and set the result to a const
-    compareNumbers(guess, correctNumber);
-    console.log(compareNumbers(guess, correctNumber));
-    //Assert
-    // Make assertions about what is expected valid result
-    assert.equal(compareNumbers(), 0);
+   
+    const shouldBeZero = compareNumbers(guess, correctNumber);
+    
+    assert.equal(shouldBeZero, 0);
+
 });
 
 test('time to test a function', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-    
-    // test for too low
     let guess = 5;
     let correctNumber = 9;
-    //Act 
-    // Call the function you're testing and set the result to a const
-    compareNumbers(guess, correctNumber);
-    console.log(compareNumbers(guess, correctNumber));
-    //Assert
-    // Make assertions about what is expected valid result
-    assert.equal(compareNumbers(), -1);
+    
+    const shouldBeNegOne = compareNumbers(guess, correctNumber);
+
+    assert.equal(shouldBeNegOne, -1);
+   
 });
 
 test('time to test a function', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-    
-    // test for too high
     let guess = 9;
     let correctNumber = 4;
-    //Act 
-    // Call the function you're testing and set the result to a const
-    compareNumbers(guess, correctNumber);
-    console.log(compareNumbers(guess, correctNumber));
-    //Assert
-    // Make assertions about what is expected valid result
-    assert.equal(compareNumbers, 1);
+    
+    const shouldBeOne = compareNumbers(guess, correctNumber);
+    assert.equal(shouldBeOne, 1);
 });
