@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess The Number</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Can You Guess The Number?</h1>
+            </div>
+            <div class="rules">
+                <p>If your up for the challenge you will need to guess the number.  Enter your guess in the input box below.  You will have 9 tries, otherwize you lose.</p>
+            </div>
+        </header>
+        <main>
+            <div class="game">
+                <label for="number-input">What number do you think it is?</label> <br>
+                <input id="number-input" type="number" min="1" max="33">
+                <button id="guess-button">Guess</button>
+            </div>
+            <div class="results-area">
+                <span id="guess-answer"></span>
+                <p>You have <span id="tries-span"> </span> tries remaning</p>
+                <span id="win-lose"></span>
+            </div>
+        </main>
+    </div>    
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
